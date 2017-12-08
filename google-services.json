@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "536338587449",
+    "project_id": "ecommerce-188406"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536338587449:android:84264c56906ed89b",
+        "android_client_info": {
+          "package_name": "com.commerce123"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536338587449-bpajkbv2r1m6u42fmjb6vol0s1edv964.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.commerce123",
+            "certificate_hash": "ecbb5056a77424905e7a296b8dd4696d9d002db0"
+          }
+        },
+        {
+          "client_id": "536338587449-failo2kq4ct9h388a04b4qagnu96veq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRwPnE1iW5Vj_Un0hEvbKuxn3lhg4IufM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

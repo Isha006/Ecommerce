@@ -1,0 +1,66 @@
+<ion-header>
+	<ion-toolbar color="theme">
+		<ion-buttons class="share-btn">
+			<button ion-button>
+				<img src="assets/imgs/share.png" alt="">
+			</button>
+		</ion-buttons>
+		<ion-title class="title_head">Profile</ion-title>
+		<ion-buttons end>
+			<button ion-button (click)="opensettingpage()">
+				<img src="assets/imgs/settitn.png" alt>
+			</button>
+		</ion-buttons>
+	</ion-toolbar><!-- Main Header End Here -->
+</ion-header>
+<ion-content padding>
+	<div class="user_sec">
+		<ion-list>
+			<ion-item>
+				<ion-avatar item-start>
+					<img src="{{userinfo.profilepicture}}" alt="">
+				</ion-avatar>
+				<h2>{{userinfo.name}}</h2>
+				<p>{{userinfo.email}}</p>
+			</ion-item>
+		</ion-list>
+		<div class="btn-sec">
+			<button ion-button clear class="btn-wish">Wishlist <span class="item">0</span></button>
+			<button ion-button round class="btn-earn" color="theme">Earn Us $ 20</button>
+		</div>
+		<div class="sugest_sec">
+			<span class="left_sugest"><span>0</span>Following</span>
+			<span class="right_sugest"><span>0</span>Followers</span>
+		</div>
+	</div>
+	<div class="search_sec">
+		<ion-searchbar [(ngModel)]="myInput"> </ion-searchbar>
+	</div>
+	<ion-card>
+		<img src="assets/imgs/pr-image.jpg"/>
+		<ion-card-content>
+			<ion-card-title>
+				Guess Printed Shirt 
+				<span class="price">$1,000.00</span>
+			</ion-card-title>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<img src="assets/imgs/pr-image.jpg"/>
+		<ion-card-content>
+			<ion-card-title>
+				Guess Printed Shirt 
+				<span class="price">$1,000.00</span>
+			</ion-card-title>
+		</ion-card-content>
+	</ion-card>
+	<ion-card>
+		<img src="assets/imgs/pr-image.jpg"/>
+		<ion-card-content>
+			<ion-card-title>
+				Guess Printed Shirt 
+				<span class="price">$1,000.00</span>
+			</ion-card-title>
+		</ion-card-content>
+	</ion-card>
+</ion-content>

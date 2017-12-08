@@ -1,0 +1,84 @@
+page-profile {
+	ion-content{
+		background-image:url('../assets/imgs/account-home.jpg');
+		background-repeat:no-repeat;
+		background-size:cover;
+		.logo-sec{
+			margin-top:50px;
+			h1{
+				font-size: 41px;
+				text-transform: uppercase;
+				color: #fff;
+				text-align: center;
+				margin: 0px;
+				font-family: 'ubuntulight';
+			}
+		}
+		.sign-in-sec{
+			width: calc(100% - 48px);
+			display: table;
+			position: fixed;
+			margin: auto;
+			bottom: 70px;
+			.fb-btn{
+				button{
+					background-color:#3b5998;
+					font-family: 'ubuntulight';
+					letter-spacing: 2px;
+					text-transform: capitalize;
+					height:45px;
+					line-height:45px;
+					ion-icon{
+						margin-right:5px;
+					}
+				}
+			}
+			.social-btn{
+				.inner-sec{
+					width:49%;
+					float:left;
+					button{
+					font-family: 'ubuntulight';
+					letter-spacing: 2px;
+					text-transform: capitalize;
+					height:45px;
+					line-height:45px;
+						ion-icon{
+							margin-right:5px;
+						}
+					}
+				}
+				.inner-sec:last-child{
+					float:right;
+				}
+				.inner-sec:first-child button{
+					background-color:#df4a32;
+				}
+				.inner-sec:last-child button{
+					background-color:#00b6f1;
+				}
+			}
+			.app-btn{
+				.inner-sec{
+					width:49%;
+					float:left;
+					button{
+						font-family: 'ubuntulight';
+						letter-spacing: 2px;
+						padding: 0px;
+						height: auto;
+						background: transparent;
+						box-shadow: none;
+						text-transform:uppercase;
+					}
+				}
+				.inner-sec:last-child{
+					float:right;
+					button{
+						float:right;
+					}
+				}
+			}
+		}
+	}
+}

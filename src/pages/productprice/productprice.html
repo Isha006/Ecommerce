@@ -1,0 +1,70 @@
+<ion-header>
+	<ion-navbar color="theme">
+		<ion-title>Price</ion-title>
+	</ion-navbar><!-- Main Header End Here -->
+</ion-header>
+<ion-content padding>
+	<div class="inner-sec">
+		<form id="product_form">
+			<h1>Select Price</h1>
+			<ion-list class="condition_sec">
+				<ion-item>
+					<ion-label>Fixed Price</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>Auction</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Target Price</ion-label>
+					<ion-input type="text" id="" value=""></ion-input>
+				</ion-item>
+				<ion-item class="date-time">
+					<ion-label>Timeframe</ion-label>
+					<ion-label class="dec-item"><ion-icon ios="ios-remove" md="md-remove"></ion-icon></ion-label>
+					<ion-input type="number" placeholder="1" name="" id="" clearInput></ion-input>
+					<ion-label class="inc-item"><ion-icon ios="ios-add" md="md-add"></ion-icon></ion-label>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Weight in Grams</ion-label>
+					<ion-input type="text" id="" value=""></ion-input>
+				</ion-item>
+				<ion-grid>
+					<ion-row>
+						<ion-col col-6>
+							<p>Dimension (L*W*H)</p>
+						</ion-col>
+						<ion-col col-2>
+							<ion-input type="text" id="" value=""></ion-input>
+						</ion-col>
+						<ion-col col-2>
+							<ion-input type="text" id="" value=""></ion-input>
+						</ion-col>
+						<ion-col col-2>
+							<ion-input type="text" id="" value=""></ion-input>
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+				<h1>Shipping Method</h1>
+				<ion-item>
+					<ion-label>UPS</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>FEDEX</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>DHL</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>Manual Shipment</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+			</ion-list>
+			<button ion-button round (click)="openproductconfirm()" block color="theme">Next Step</button> 
+		</form>
+	</div>
+</ion-content>

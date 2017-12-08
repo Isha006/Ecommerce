@@ -1,0 +1,77 @@
+<ion-content padding>
+<div class="close-btn">
+	<button ion-button clear (click)="dismiss()"><ion-icon name="close" ></ion-icon></button>
+</div>
+<div class="outer-box">
+	<div class="logo-sec">
+		<h1>Join Now</h1>
+	</div>
+	<div class="form-sec">
+		<form #heroForm="ngForm" novalidate>
+			<ion-list>
+			  <ion-item>
+				<ion-input type="text" placeholder="Full Name" [(ngModel)]="data.fname" name="fname" #fname="ngModel" required></ion-input>
+			  </ion-item>
+                             <div *ngIf="fname.errors && (fname.dirty || fname.touched)" class="alert alert-danger red-alt">
+       <div [hidden]="!fname.errors.required" class="alert alert-danger red-alt">
+         This Field is required
+        </div>
+<!--		<div [hidden]="!fname.errors.pattern" class="alert alert-danger red-alt">
+         Only alphabets are allowed
+        </div>-->
+     </div>
+			  <ion-item>
+				<ion-input type="email" placeholder="Email" [(ngModel)]="data.email" name="email" #email="ngModel" pattern='^[a-zA-Z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$' required></ion-input>
+			  </ion-item>
+                              <div *ngIf="email.errors && (email.dirty || email.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!email.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+         <div [hidden]="!email.errors.pattern" class="alert alert-danger red-alt">
+          Invalid E-mail
+         </div>
+      </div>
+			  <ion-item>
+				<ion-input type="text" placeholder="Username" [(ngModel)]="data.username" name="username" #username="ngModel" required></ion-input>
+			  </ion-item>
+                             <div *ngIf="username.errors && (username.dirty || username.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!username.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+      </div>
+			  <ion-item>
+				<ion-input type="password" placeholder="Password" [(ngModel)]="data.password" name="password" #password="ngModel" required></ion-input>
+			  </ion-item>
+                             <div *ngIf="password.errors && (password.dirty || password.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!password.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+      </div>
+			  <ion-item>
+				<ion-input type="password" placeholder="Confirm Password" [(ngModel)]="data.cpassword" name="cpassword" #cpassword="ngModel" required></ion-input>
+			  </ion-item>
+                               <div *ngIf="cpassword.errors && (cpassword.dirty || cpassword.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!cpassword.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+      </div>
+                            
+                            
+                            <ion-item>
+                                  <ion-label  class="item item-input item-select labrl_cmprs"  [hidden]="data.gender"> 
+    <div class="input-label gndr_mle">
+   Gender
+ </div> </ion-label>
+				<ion-select [(ngModel)]="data.gender" name="gender" #gender="ngModel" required class="gndr colrslct " > 
+       
+                                    <ion-option value="male">Male</ion-option>
+      <ion-option value="female">Female</ion-option>
+    </ion-select>
+			  </ion-item>
+			  <p>By creating an account and signing up to logo. I accept the <button ion-button class="pass-btn" (click)="openterms()">Terms of Service</button> and <button ion-button class="pass-btn" (click)="openprivacy()">Privacy Policy</button></p>
+			  <button  (click)="openprofilepage(heroForm)" color="theme" ion-button round block>Create Account</button>
+			</ion-list>
+		</form>
+	</div>
+</div>
+</ion-content>

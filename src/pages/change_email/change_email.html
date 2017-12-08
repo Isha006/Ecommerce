@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title class="title_head">
+      Change Email
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="form_sec">
+		<form #heroForm="ngForm">
+			<ion-list>
+				<ion-item>
+					<ion-label floating>Enter Your Current Email</ion-label>
+					<ion-input type="email" [(ngModel)]="data.old" name="old" #old="ngModel" pattern='^[a-zA-Z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$' required></ion-input>
+				</ion-item>
+                            <div *ngIf="old.errors && (old.dirty || old.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!old.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+         <div [hidden]="!old.errors.pattern" class="alert alert-danger red-alt">
+          Invalid E-mail
+         </div>
+      </div>
+				<ion-item>
+					<ion-label floating>Enter New Email</ion-label>
+					<ion-input type="email" [(ngModel)]="data.new" name="new" #new="ngModel" pattern='^[a-zA-Z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$'  required></ion-input>
+				</ion-item>
+                            <div *ngIf="new.errors && (new.dirty || new.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!new.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+         <div [hidden]="!new.errors.pattern" class="alert alert-danger red-alt">
+          Invalid E-mail
+         </div>
+      </div>
+			</ion-list>
+			<button [disabled]="!heroForm.form.valid" (click)="change_pass(heroForm)" ion-button round block color="theme">Submit</button>
+		</form>
+	</div>
+</ion-content>

@@ -1,0 +1,33 @@
+<ion-nav  #content [root]="rootPage"></ion-nav>
+
+
+
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Categories</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+         <button ion-item *ngFor="let p of pages" (click)="openPage(p)" >
+        {{p.title}}
+      </button>
+<!--      <button ion-item (click)="openPage('TransitionPage')" >
+        Home
+      </button>
+      <button ion-item (click)="openPage('Transition')">
+        Transition
+      </button>
+      <button ion-item (click)="openPage('AddPage')">
+        Add
+      </button>
+      <button ion-item (click)="openPage('NotificationPage')">
+        Notification
+      </button>
+-->	  <button ion-item (click)="profile()">
+        Profile
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>

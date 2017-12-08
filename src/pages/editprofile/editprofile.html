@@ -1,0 +1,79 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title class="title_head">
+      Edit Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="form_sec">
+		
+			<ion-list>
+				<ion-item (click)="presentActionSheet()">
+					<ion-avatar item-start>
+						<img src="{{userinfo.profilepicture}}">
+					</ion-avatar>
+					<h2>Change Profile Image</h2>
+				</ion-item>
+				<ion-item (click)="openchangepasswordPage(userinfo.email)">
+					<h2>Change Password</h2>
+				</ion-item>
+				<ion-item (click)="openchangeemailPage()">
+					<h2>Change Email</h2>
+				</ion-item>
+<!--				<ion-item (click)="openprofilePage()">
+					<h2>Profile</h2>
+				</ion-item>-->
+                        </ion-list>
+            <form #heroForm="ngForm">
+            <ion-list>
+                            
+				<ion-item>
+					<ion-label floating>Name</ion-label>
+					<ion-input type="text" [(ngModel)]="userinfo.name" name="name" #name="ngModel"></ion-input>
+				</ion-item>
+                <div *ngIf="name.errors && (name.dirty || name.touched)" class="alert alert-danger red-alt">
+       <div [hidden]="!name.errors.required" class="alert alert-danger red-alt">
+         This Field is required
+        </div>
+<!--		<div [hidden]="!fname.errors.pattern" class="alert alert-danger red-alt">
+         Only alphabets are allowed
+        </div>-->
+     </div>
+				<ion-item>
+					<ion-label floating>Username</ion-label>
+					<ion-input type="text"  [(ngModel)]="userinfo.username" name="username" #username="ngModel" ></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Location</ion-label>
+					<ion-input type="text" [(ngModel)]="userinfo.location" name="location"  #location="ngModel"></ion-input>
+				</ion-item>
+                                <ion-item >
+    <ion-label floating> Gender
+       </ion-label>
+    <!-- <ion-label>Gender</ion-label> -->
+    <ion-select [(ngModel)]="userinfo.gender" name="gender"  #gender="ngModel">
+       
+      <ion-option value="male">Male</ion-option>
+      <ion-option value="female">Female</ion-option>
+    </ion-select>
+  </ion-item>
+			</ion-list>
+<!--			<ion-list radio-group>
+				<ion-list-header>
+					Gender
+				</ion-list-header>
+				<ion-item>
+					<ion-label>Male</ion-label>
+					<ion-radio checked="true" value="male"></ion-radio>
+				</ion-item>
+				<ion-item>
+					<ion-label>Female</ion-label>
+					<ion-radio value="female"></ion-radio>
+				</ion-item>
+			</ion-list>-->
+			<button (click)="next_log(heroForm)" ion-button round block color="theme">Submit</button>
+		</form>
+	</div>
+</ion-content>

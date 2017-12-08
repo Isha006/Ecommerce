@@ -1,0 +1,49 @@
+page-editprofile {
+	.form_sec{
+		form{
+			.list.list-md,
+			.list.list-ios{
+				ion-item{
+					padding:0px !important;
+					.item-inner{
+						border-bottom:1px solid #dedede;
+						padding:0px !important;
+					}
+					&:last-child{
+						.item-inner{
+							border-bottom:0px;
+						}
+					}
+					&:first-child{
+						border:0px;
+						border-bottom:1px solid #dedede;
+						.item-inner{
+							border:0px;
+						}
+					}
+				}
+				ion-item.item-md.item-input.item-input-has-focus{
+					.item-inner{
+						border-color:#488AFF;
+					}
+				} 
+				.item-md.item-input.input-has-focus{
+					.item-inner{
+						border-color:#488AFF;
+					}
+				}
+				ion-list-header{
+					padding:0px;
+					.item-inner{
+						.input-wrapper{
+							ion-label{
+								font-size:1.7rem;
+							}
+						}
+					}
+				}				
+
+			}
+		}
+	}
+}

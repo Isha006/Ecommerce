@@ -1,0 +1,186 @@
+page-add {
+	ion-content{
+		.inner-sec{
+			form{
+				.top_sec{
+					background-color:#f2f2f2;
+					h1{
+						font-size: 19px;
+						font-weight: 700;
+						letter-spacing: 1px;
+						color: rgba(0, 0, 0, 0.65);
+						text-transform: uppercase;
+						margin-bottom:23px;
+					}
+					ion-list{
+						width:100%;
+						display:table;
+						ion-item:first-child,
+						ion-item:nth-child(2){
+							width: 49%;
+							float: left;
+							padding: 0px;
+							.item-inner{
+								padding: 0px;
+								border:none !important;
+								.input-wrapper{
+									ion-label{
+										width: 100%;
+										height: 50px;
+										line-height: 50px;
+										text-align: center;
+										background-color: #3b5998;
+										border-radius: 50px;
+										margin: 0px;
+										text-transform:uppercase;
+										color:#fff;
+									}
+									ion-input{
+										width: 100%;
+										float: left;
+										position: absolute;
+										left: 0;
+										top: 0;
+										opacity: 0;
+										z-index: 999;
+										input{
+											margin:0px;
+											padding:13px 8px;
+											width:100%;
+										}
+									}
+								}
+							}
+						}
+						ion-item:nth-child(2){
+							float:right;
+							.item-inner{
+								.input-wrapper{
+									ion-label{
+										background-color:rgba(0, 0, 0, 0.65);
+									}
+								}
+							}
+						}
+						ion-item:last-child{
+							border:none;
+						}
+					}
+					.image_viewer{
+						width:100%;
+						display:table;
+						margin-top:23px;
+						.img_wrap{
+							width: calc(100% / 5);
+							float: left;
+							position: relative;
+							padding: 0px 5px;
+							height: 55px;
+							span.drop_img{
+								height: 15px;
+								width: 15px;
+								display: inline-block;
+								line-height: 15px;
+								text-align: center;
+								border-radius: 50%;
+								border: 1px solid #ff0000;
+								color: #ff0000;
+								position: absolute;
+								right: 0;
+								top: -7px;
+								z-index:999;
+							}
+							figure {
+								margin: 0px;
+								height: 100%;
+								width: 100%;
+								overflow: hidden;
+								img{
+									width:100%;
+								}
+							}
+						}
+					}
+				}
+				.bottom-sec{
+					background-color:#fff;
+					h1{
+						font-size: 19px;
+						font-weight: 700;
+						letter-spacing: 1px;
+						color: rgba(0, 0, 0, 0.65);
+						text-transform: uppercase;
+					}
+					ion-list{
+						ion-item{
+							padding:0px;
+							.item-inner{
+								padding:0px;
+								.input-wrapper{
+									ion-select{
+										width:100%;
+										max-width:100%;
+										padding-left:0px;
+										padding-right:0px;
+										border-bottom:2px solid #ccc;
+										color:rgba(0, 0, 0, 0.65);
+										.select-icon{
+											.select-icon-inner{
+												left:0px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.used_ct_wrap{
+						margin-bottom:23px;
+						.ct_inner{
+							margin-bottom:7px;
+							button{
+								padding: 0px 13px;
+								margin: 0;
+								height: auto;
+								text-transform: capitalize;
+								background: transparent;
+								box-shadow: none;
+								color: rgba(0, 0, 0, 0.65);
+								position: relative;
+								font-size:14px;
+								&:after{
+									content:'';
+									position:absolute;
+									width:1px;
+									height:100%;
+									background-color:rgba(0, 0, 0, 0.65);
+									top:0px;
+									right:0px;
+									-webkit-transform:rotate(30deg);
+									-moz-transform:rotate(30deg);
+									-ms-transform:rotate(30deg);
+									-o-transform:rotate(30deg);
+									transform:rotate(30deg);
+								}
+							}
+							button:first-child{
+								padding-left:0px;
+							}
+							button:last-child{
+								padding-right:0px;
+								&:after{
+									display:none;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.list-ios > .item-block:last-child, 
+	.list-ios > .item-wrapper:last-child .item-block,
+	.list-ios > .item-block:first-child{
+		border:none;
+	}
+}

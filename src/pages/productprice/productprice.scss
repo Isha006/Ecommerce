@@ -1,0 +1,117 @@
+page-productprice {
+	ion-content{
+		.scroll-content{
+			.inner-sec{
+				form{
+					ion-list{
+						ion-item{
+							padding:0px;
+							.item-inner{
+								padding:0px !important;
+								ion-label{
+									color:rgba(0, 0, 0, 0.65);
+								}
+								ion-toggle{
+									width:46px;
+									height:24px;
+									.toggle-icon{
+										border-radius:50px;
+										background-color:#595959;
+										.toggle-inner{
+											height:30px;
+											width:30px;
+										}
+									}
+								}
+								ion-toggle.toggle.toggle-ios{
+									.toggle-icon{
+										.toggle-inner{
+											left:-2px;
+											top:-4px;
+										}
+									}
+								}
+								ion-toggle.toggle-checked{
+									.toggle-icon{
+										background-color:#3b5999;
+										.toggle-inner{
+											background-color:#fff;
+										}
+									}
+								}
+							}
+						}
+						ion-item.date-time{
+							border:none !important;
+							.item-inner{
+								ion-label.dec-item{
+								margin:0px;
+								float: right;
+								position: absolute;
+								right: 127px;
+								height: 47px;
+								line-height: 47px;
+								width: 47px;
+								text-align: center;
+								cursor: pointer;
+								}
+								ion-label.inc-item{
+									margin: 0px;
+									float: right;
+									position: absolute;
+									right: 0;
+									height: 47px;
+									line-height: 47px;
+									width: 47px;
+									text-align: center;
+									cursor: pointer;
+								}
+								ion-input{
+									width: 80px;
+									float: right !important;
+									position: absolute;
+									right: 47px;
+									background: #f2f2f2;
+									border: 1px solid #ddd;
+									border-radius: 50px;
+									text-align: center;
+									-webkit-box-flex:initial;
+									-webkit-flex:initial;
+									flex:initial;
+									bottom:0px;
+									input{
+										padding:0px;
+										width:50px;
+									}
+								}
+							}
+						}
+						ion-grid{
+							padding-left:0px;
+							ion-row{
+								ion-col{
+									padding-left:0px;
+									p{
+										font-size:15px;
+										color:rgba(0, 0, 0, 0.65);
+									}
+									ion-input{
+										border-bottom:1px solid #dedede;
+									}
+								}
+							}
+						}
+					}
+					h1{
+						font-size: 19px;
+						font-weight: 700;
+						letter-spacing: 1px;
+						color: rgba(0, 0, 0, 0.65);
+						text-transform: uppercase;
+						margin-bottom:23px;
+					}
+				}
+			}
+		}
+	}
+}

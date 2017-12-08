@@ -1,0 +1,55 @@
+<!--
+  Generated template for the SettingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="theme">
+    <ion-title class="title_head">settings</ion-title>
+     <ion-buttons end>
+                <button ion-button icon-only (click)="dismiss()">
+                    <ion-icon item-right name="ios-close-outline"></ion-icon>
+                </button>
+            </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content >
+<div class="box">
+<ion-list>
+  <ion-list-header>
+    connect
+  </ion-list-header>
+  <ion-item>  <ion-icon class="icn"><img  src="assets/imgs/hand.png"/></ion-icon>Earn credits</ion-item>
+  
+</ion-list>
+
+
+
+<ion-list>
+  <ion-list-header>
+    account
+  </ion-list-header>
+  <ion-item (click)="openeditprofilepage()" >  <ion-icon class="icn" ><img  src="assets/imgs/edit_p.png"/></ion-icon>Edit profile</ion-item>
+  <ion-item>  <ion-icon class="icn"><img  src="assets/imgs/wallet_s.png"/></ion-icon>Wallet</ion-item>
+  <ion-item (click)="openpayment_page()"> <ion-icon class="icn"><img  src="assets/imgs/payment_s.png"/></ion-icon>Payment</ion-item>
+   <ion-item (click)="open_shippingpage()"> <ion-icon class="icn"><img  src="assets/imgs/shipping_s.png"/></ion-icon>Shipping Address</ion-item>
+  
+</ion-list>
+
+<ion-list>
+  <ion-list-header>
+   More
+  </ion-list-header>
+  <ion-item>  <ion-icon class="icn"><img  src="assets/imgs/terms_s.png"/></ion-icon>Terms of Services</ion-item>
+  <ion-item>  <ion-icon class="icn"><img  src="assets/imgs/privacy_s.png"/></ion-icon>Privacy Policy</ion-item>
+  <ion-item (click)="Signout()"> <ion-icon class="icn"><img  src="assets/imgs/signout_s.png"/></ion-icon>Sign Out</ion-item>
+</ion-list>
+</div>
+
+
+</ion-content>

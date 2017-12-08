@@ -1,0 +1,110 @@
+page-transition {
+
+	.segmentbx{
+
+			ion-item{
+
+				    margin-top: 10px;
+   					 padding: 0;
+
+				ion-label{
+					margin: 0px;
+				}
+				h1{
+					color: #808080;
+    				font-size: 20px;
+				}
+				h2{
+					font-size: 15px;
+    				color: #959595;
+    				    margin: 3px 0;
+
+    				.hours{
+    					float: right
+    				}
+				}
+			}
+
+
+			ion-grid{
+
+				       border-top: 2px solid #e2e2e2;
+   						 padding: 5px 0;
+   						 box-shadow: 0px 2px 1px #efefef;
+
+				padding: 3px 0;
+
+				ion-col{
+
+					h2{
+					   font-size: 11px;
+   					color: #808080;
+    				margin: 0;
+    				text-transform: capitalize;
+    				color: #808080;
+				}
+				.offer{
+					float: right;
+    				color: #3b5998;
+				}
+
+				}
+
+				
+			}
+
+			.box{
+
+				ion-item{
+					    background: #f2f2f2;
+    					padding:0;
+    					box-shadow: 0px 2px 1px #b5b5b58c;
+
+    			ion-thumbnail{
+    				margin: 0px;
+    			}
+
+    					h2{
+    						color: #7a7a7a;
+    						text-transform: capitalize;
+    						margin: 11px 0;
+    					}
+				}
+
+			}
+
+			.box2{
+				    
+    				margin-top: 26px;
+    				h2{
+    					    color: #808080;
+    					    span{
+    					    	float: right;
+
+    					    	.hour{
+    					    		    margin-left: 11px;
+    					    	}
+    					    }
+    				}
+			}
+
+	}
+
+}
+
+.segment-md .segment-button {
+   
+    color: #ffffff;
+    background-color: #3b5998;
+   
+}
+
+.segment-md .segment-button.activated, .segment-md .segment-button.segment-activated {
+    border-color: #8f8f8f;
+    opacity: 1;
+    background: #8f8f8f;
+}
+
+.list-md .item-block .item-inner {
+    border-bottom: 0px;
+}

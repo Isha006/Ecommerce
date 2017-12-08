@@ -1,0 +1,113 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+ion-header{
+	ion-toolbar{
+		.toolbar-content{
+			.toolbar-title{
+				text-align:center;
+				text-transform:uppercase;
+			}
+		}
+		ion-buttons{
+			button{
+				span.button-inner{
+					img{
+						height:20px;
+					}
+				}
+			}
+		}
+	}
+}
+.tabbar.show-tabbar{
+	.tab-button{
+		ion-icon{
+			height:30px;
+			width:30px;
+			min-width:auto;
+			background-size:cover;
+			background-repeat:no-repeat;
+		}
+		ion-icon.ion-md-home-icon,
+		ion-icon.ion-ios-home-icon,
+		ion-icon.ion-ios-home-icon-outline{
+			background-image:url('../assets/imgs/home.png');
+		}
+		ion-icon.ion-md-transition-icon,
+		ion-icon.ion-ios-transition-icon,
+		ion-icon.ion-ios-transition-icon-outline{
+			background-image:url('../assets/imgs/transition.png');
+		}
+		ion-icon.ion-md-add-icon,
+		ion-icon.ion-ios-add-icon,
+		ion-icon.ion-ios-add-icon-outline{
+			background-image:url('../assets/imgs/add.png');
+		}
+		ion-icon.ion-md-notification-icon,
+		ion-icon.ion-ios-notification-icon,
+		ion-icon.ion-ios-notification-icon-outline{
+			background-image:url('../assets/imgs/notification.png');
+		}
+		ion-icon.ion-md-profile-icon,
+		ion-icon.ion-ios-profile-icon,
+		ion-icon.ion-ios-profile-icon-outline{
+			background-image:url('../assets/imgs/profile.png');
+		}
+	}
+	.tab-button[aria-selected=true]{
+		ion-icon.ion-md-home-icon,
+		ion-icon.ion-ios-home-icon,
+		ion-icon.ion-ios-home-icon-outline{
+			background-image:url('../assets/imgs/home-active.png');
+		}
+		ion-icon.ion-md-transition-icon,
+		ion-icon.ion-ios-transition-icon,
+		ion-icon.ion-ios-transition-icon-outline{
+			background-image:url('../assets/imgs/transition-active.png');
+		}
+		ion-icon.ion-md-add-icon,
+		ion-icon.ion-ios-add-icon,
+		ion-icon.ion-ios-add-icon-outline{
+			background-image:url('../assets/imgs/add-active.png');
+		}
+		ion-icon.ion-md-notification-icon,
+		ion-icon.ion-ios-notification-icon,
+		ion-icon.ion-ios-notification-icon-outline{
+			background-image:url('../assets/imgs/notification-activ.png');
+		}
+		ion-icon.ion-md-profile-icon,
+		ion-icon.ion-ios-profile-icon,
+		ion-icon.ion-ios-profile-icon-outline{
+			background-image:url('../assets/imgs/profile-active.png');
+		}
+	}
+}
+
+@font-face {
+    font-family: 'ubuntulight';
+    src: url('../assets/fonts/ubuntu-l-webfont.eot');
+    src: url('../assets/fonts/ubuntu-l-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/fonts/ubuntu-l-webfont.woff2') format('woff2'),
+         url('../assets/fonts/ubuntu-l-webfont.woff') format('woff'),
+         url('../assets/fonts/ubuntu-l-webfont.ttf') format('truetype'),
+         url('../assets/fonts/ubuntu-l-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,36 @@
+page-payment {
+	h2{
+		font-size: 16px;
+		letter-spacing: 1px;
+		color: rgba(0, 0, 0, 0.75);
+	}
+	.form_sec{
+		form{
+			.list.list-md{
+				ion-item{
+					padding:0px !important;
+					.item-inner{
+						border-bottom:1px solid #dedede;
+						padding:0px !important;
+					}
+					&:last-child{
+						.item-inner{
+							border-bottom:0px;
+						}
+					}
+				}
+				ion-item.item-md.item-input.item-input-has-focus{
+					.item-inner{
+						border-color:#488AFF;
+					}
+				} 
+				.item-md.item-input.input-has-focus{
+					.item-inner{
+						border-color:#488AFF;
+					}
+				} 
+
+			}
+		}
+	}
+}

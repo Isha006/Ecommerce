@@ -1,0 +1,132 @@
+page-signin {
+    ion-content {
+        background-color: #353535 !important;
+        .close-btn {
+            text-align: right;
+            button {
+                ion-icon {
+                    font-size: 23px;
+                    color: #ddd;
+                }
+            }
+        }
+        .outer-box {
+            height: 265px;
+            width: 276px;
+            display: table;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            .logo-sec {
+                h1 {
+					font-family: 'ubuntulight';
+					letter-spacing:2px;
+                    font-weight: normal;
+                    text-align: center;
+                    font-size: 23px;
+                    margin-bottom: 30px;
+                    color: #fff;
+                }
+            }
+            .form-sec {
+                width: 100%;
+                display: table;
+                form {
+                    width: 100%;
+                    float: left;
+                    ion-list {
+                        width: 100%;
+                        float: left;
+                        ion-item {
+                            padding: 0px;
+                            margin-bottom: 13px;
+                            background-color: transparent;
+                            .item-inner {
+                                border: none;
+                                background: #1a1a1a;
+                                border-radius: 50px;
+                                padding: 0px !important;
+                                border: none !important;
+                                input {
+                                    margin: 0px;
+                                    padding: 13px 20px;
+                                    width: 100%;
+                                    color: #fff;
+				font-family: 'ubuntulight';
+                                }
+                            }
+                            &:first-child {
+                                border: none !important;
+                            }
+                        }
+                        ion-item:last-child {
+                            border-bottom: none !important;
+                        }
+                        button.submit_btn {
+                            margin-top: 70px;
+							font-family: 'ubuntulight';
+							text-transform:capitalize;
+							letter-spacing:2px;
+							height:45px;
+							line-height:45px;
+                        }
+                    }
+                }
+                .other_btn {
+                    width: 100%;
+                    float: left;
+                    position: absolute;
+                    left: 0px;
+                    bottom: 80px;
+                }
+                button.pass-btn {
+                    margin: 0px;
+                    padding: 0px;
+                    height: auto;
+                    border-radius: 0px;
+                    background-color: transparent;
+                    box-shadow: none;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                    font-weight: normal;
+                    margin-bottom: 13px;
+					font-family: 'ubuntulight';
+					letter-spacing:2px;
+                }
+                button.join-btn {
+                    margin: 0px;
+                    padding: 0px;
+                    height: auto;
+                    float: right;
+                    border-radius: 0px;
+                    background-color: transparent;
+                    box-shadow: none;
+                    text-transform: capitalize;
+                    letter-spacing: 1px;
+                    font-weight: normal;
+                    margin-bottom: 13px;
+					font-family: 'ubuntulight';
+					letter-spacing:2px;
+                }
+            }
+        }
+    }
+    .red-alt {
+        font-size: 12px;
+        color: #c4013e;
+        padding: 3px 0px 0px 3px;
+        margin-bottom: 19px;
+    }
+	ion-content.content.content-ios{
+		.outer-box{
+			.form-sec{
+				.other_btn{
+					bottom:100px;
+				}
+			}
+		}
+	}
+}

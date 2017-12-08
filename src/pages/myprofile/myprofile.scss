@@ -1,0 +1,117 @@
+page-myprofile {
+	ion-header{
+		ion-toolbar{
+			ion-buttons.share-btn{
+				position: absolute;
+				left: 0;
+				top: 12px;
+			}
+		}
+	}
+	ion-content{
+		background-color:#f2f2f2 !important;
+		.user_sec{
+			width:100%;
+			float:left;
+			ion-list{
+				.item.item-block.item-md,
+				.item.item-block.item-ios{
+					border:none;
+					ion-avatar{
+						height:75px;
+						width:75px;
+						img{
+							height:75px;
+							width:75px;
+						}
+					}
+					.item-inner{
+						ion-label{
+							h2{
+								font-weight: bold;
+								letter-spacing: 1px;
+								text-transform: uppercase;
+								color:rgba(0, 0, 0, 0.75);
+								font-size:16px;
+							}
+						}
+					}
+				}
+			}
+			.btn-sec{
+				width:100%;
+				float:left;
+				.btn-wish{
+					margin-left: 0px;
+					margin-right: 0px;
+					padding-left: 0px;
+					padding-right: 0px;
+					color:rgba(0, 0, 0, 0.75);
+					text-transform: uppercase;
+					span.item{
+						color:#3b5998;
+						margin-left:5px;
+					}
+				}
+				.btn-earn{
+					float:right;
+					text-transform:uppercase;
+				}
+			}
+			.sugest_sec{
+				width: 100%;
+				float: left;
+				padding: 10px 11px;
+				background-color: #fff;
+				margin-top:8px;
+				span.left_sugest{
+					text-transform: uppercase;
+					color: rgba(0, 0, 0, 0.75);
+					float: left;
+					span{
+						margin-right: 5px;
+						color: #000;
+					}
+				}
+				span.right_sugest{
+					text-transform: uppercase;
+					color: rgba(0, 0, 0, 0.75);
+					float: right;
+					span{
+						margin-right: 5px;
+						color: #000;
+					}
+				}
+			}
+		}
+		.search_sec{
+			width:100%;
+			float:left;
+			ion-searchbar.searchbar{
+				padding-left:0px;
+				padding-right:0px;
+				background: transparent;
+				border: none;
+				input.searchbar-input{
+					box-shadow: none;
+					background-color: #fff;
+				}
+			}
+		}
+		ion-card.card.card-md,
+		ion-card.card.card-ios{
+			margin:0px;
+			width:100%;
+			margin-bottom:16px;
+			box-shadow:none;
+			ion-card-content{
+				ion-card-title{
+					font-size:14px;
+					span{
+						float:right;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title class="title_head">
+      Forgot Password
+    </ion-title>
+     <button class="dismiss" ion-button clear (click)="dismiss()"><ion-icon name="close" ></ion-icon></button>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="form_sec">
+		<form #heroForm="ngForm">
+			<ion-list>
+				<ion-item>
+					<ion-label floating >Enter Your Email</ion-label>
+					<ion-input type="email" [(ngModel)]="data.email" name="email" #email="ngModel"></ion-input>
+				</ion-item>
+			</ion-list>
+			<button ion-button round block color="theme" (click)="forgot(heroForm)">Submit</button>
+		</form>
+	</div>
+</ion-content>

@@ -1,0 +1,40 @@
+<ion-content padding>
+<div class="close-btn">
+	<button ion-button clear (click)="dismiss()"><ion-icon name="close" ></ion-icon></button>
+</div>
+<div class="outer-box">
+	<div class="logo-sec">
+		<h1>Sign In</h1>
+	</div>
+	<div class="form-sec">
+		<form #heroForm="ngForm">
+			<ion-list>
+			  <ion-item>
+				<ion-input type="email" placeholder="Email" [(ngModel)]="data.email" name="email" #email="ngModel" pattern='^[a-zA-Z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$' required></ion-input>
+			  </ion-item>
+                            <div *ngIf="email.errors && (email.dirty || email.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!email.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+         <div [hidden]="!email.errors.pattern" class="alert alert-danger red-alt">
+          Invalid E-mail
+         </div>
+      </div>
+			  <ion-item>
+				<ion-input type="password" placeholder="Password" [(ngModel)]="data.password" name="password" #password="ngModel" required></ion-input>
+			  </ion-item>
+                             <div *ngIf="password.errors && (password.dirty || password.touched)" class="alert alert-danger red-alt">
+        <div [hidden]="!password.errors.required" class="alert alert-danger red-alt">
+          This field is required
+         </div>
+      </div>
+			  <button  class="submit_btn"color="theme" [disabled]="!heroForm.form.valid" ion-button round block (click)="sign_in(heroForm)">Sign In</button>
+			</ion-list>
+		</form>
+            <div class="other_btn">
+                <button ion-button class="pass-btn" (click)="forgot()">Forgot Password</button>
+                <button ion-button (click)="openSignupPage()" class="join-btn">Join Now</button>
+            </div>
+	</div>
+</div>
+</ion-content>

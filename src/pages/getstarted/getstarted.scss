@@ -1,0 +1,47 @@
+page-getstarted {
+	ion-slides{
+		height:auto;
+	}
+	.bottom-sec{
+		h2{
+			width: 100%;
+			display: table;
+			text-align: center;
+			text-transform: uppercase;
+			font-weight: normal;
+			position: relative;
+			padding-bottom: 10px;
+			margin-bottom: 30px;
+			color:rgba(0, 0, 0, 0.65);
+			span{
+				font-weight:bold;
+			}
+		}
+		h2:after{
+			content: '';
+			position: absolute;
+			width: 30px;
+			height: 2px;
+			background-color: #3b5998;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+		}
+		p{
+			text-align:center;
+			line-height:21px;
+			color:rgba(0, 0, 0, 0.65);
+		}
+	}
+	button[color="theme"]{
+		position:fixed;
+		width:100%;
+		float:left;
+		bottom:0px;
+		bottom:0px;
+		text-transform:uppercase;
+		font-weight:normal;
+		margin:0px;
+	}
+}

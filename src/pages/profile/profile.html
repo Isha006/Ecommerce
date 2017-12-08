@@ -1,0 +1,27 @@
+<ion-content padding>
+<div class="logo-sec">
+	<h1>Logo</h1>
+</div>
+<div class="sign-in-sec">
+	<div class="fb-btn" (click)="facebook_login()">
+		<button ion-button round block><ion-icon ios="logo-facebook" md="logo-facebook"></ion-icon> Sign In With Facebook</button>
+	</div>
+	<div class="social-btn">
+		<div class="inner-sec" (click)="loginUser()">
+			<button ion-button round block><ion-icon ios="logo-googleplus" md="logo-googleplus"></ion-icon> Google</button>
+		</div>
+		<div class="inner-sec" (click)="twitter_login()">
+			<button ion-button round block><ion-icon ios="logo-twitter" md="logo-twitter"></ion-icon> Twitter</button>
+		</div>
+	</div>
+	<div class="app-btn">
+		<div class="inner-sec">
+			<button ion-button (click)="openSigninPage()">Sign In</button>
+		</div>
+		<div class="inner-sec">
+			<button ion-button (click)="presentModal()">Join Now</button>
+		</div>
+	</div>
+	
+</div>
+</ion-content>

@@ -1,0 +1,39 @@
+<ion-header>
+	<ion-navbar color="theme">
+		<ion-title>Description</ion-title>
+	</ion-navbar><!-- Main Header End Here -->
+</ion-header>
+<ion-content padding>
+	<div class="inner-sec">
+		<form id="product_form">
+			<ion-list>
+				<ion-item>
+					<ion-label floating>Title</ion-label>
+					<ion-input type="text" id="" name="" value=""></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Description</ion-label>
+					<ion-textarea id="" name="" value=""></ion-textarea>
+				</ion-item>
+			</ion-list>
+			<h1>Condition</h1>
+			<ion-list class="condition_sec">
+				<ion-item>
+					<ion-label>New</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>Used</ion-label>
+					<ion-toggle></ion-toggle>
+				</ion-item>
+				<ion-item>
+					<ion-label>Quantity</ion-label>
+					<ion-label class="dec-item"><ion-icon ios="ios-remove" md="md-remove"></ion-icon></ion-label>
+					<ion-input type="number" placeholder="1" name="" id="" clearInput></ion-input>
+					<ion-label class="inc-item"><ion-icon ios="ios-add" md="md-add"></ion-icon></ion-label>
+				</ion-item>
+			</ion-list>
+			<button ion-button round block color="theme" (click)="productprice()">Next Step</button> 
+		</form>
+	</div>
+</ion-content>

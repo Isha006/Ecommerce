@@ -1,0 +1,109 @@
+page-signup {
+	ion-content{
+		background-color:#353535 !important;
+		.close-btn{
+			text-align:right;
+			button{
+				ion-icon{
+					font-size:23px;
+					color:#ddd;
+				}
+			}
+		}
+		.outer-box{
+			.logo-sec{
+				h1{
+					font-weight: normal;
+					text-align: center;
+					font-size: 23px;
+					margin-bottom: 30px;
+					color:#fff;
+					letter-spacing:2px;
+					font-family: 'ubuntulight';
+				}
+			}
+			.form-sec{
+				width:100%;
+				display:table;
+				form{
+					width:100%;
+					float:left;
+					ion-list{
+						width: 100%;
+						float: left;
+						ion-item{
+							padding:0px;
+							margin-bottom:13px;
+							background-color:transparent;
+							.item-inner{
+								border: none;
+								background: #1a1a1a;
+								border-radius: 50px;
+								padding: 0px !important;
+								border:none !important;
+								input{
+									margin: 0px;
+									padding: 13px 20px;
+									width: 100%;
+									color:#fff;
+									letter-spacing:2px;
+									font-family: 'ubuntulight';
+								}
+                                                                ion-select{
+                                                                    color:#fff;
+                                                                    font-weight: 300;
+                                                                }
+							}
+                                                        &:first-child{
+                                                            
+                                                            border:none !important;
+                                                        }
+						}
+						ion-item:last-child{
+							border-bottom:none !important;
+						}
+						p{
+							letter-spacing:2px;
+							font-family: 'ubuntulight';
+							color:#ccc;
+							button.pass-btn{
+								margin:0px;
+								padding:0px;
+								height:auto;
+								border-radius:0px;
+								background-color:transparent;
+								box-shadow:none;
+								text-transform: capitalize;
+								letter-spacing: 1px;
+								font-weight: normal;
+								margin-bottom:13px;
+								font-family: 'ubuntulight';
+								margin:0px;
+								font-size:14px;
+								margin-top:-9px;
+							}
+						}
+						button{
+							text-transform:capitalize;
+							letter-spacing:2px;
+							font-family: 'ubuntulight';
+							height:45px;
+							line-height:45px;
+						}
+					}
+				}
+			}
+		}
+	}
+       .red-alt{
+  font-size: 12px;
+  color:#c4013e;
+  padding:3px 0px 0px 3px;
+  margin-bottom: 19px;
+}
+.labrl_cmprs{
+    padding-left: 16px;
+    color:rgba(255, 255, 255, 0.3) !important;
+    font-weight: 300;
+}
+}

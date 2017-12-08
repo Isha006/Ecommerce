@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="theme">
+    <ion-title>
+      Edit Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+	<div class="form_sec">
+		<form>
+			<ion-list>
+				<ion-item>
+					<ion-avatar item-start>
+						<img src="assets/imgs/avatar.png">
+					</ion-avatar>
+					<h2>Change Profile Image</h2>
+				</ion-item>
+				<ion-item (click)="openchangepasswordPage()">
+					<h2>Change Password</h2>
+				</ion-item>
+				<ion-item (click)="openchangeemailPage()">
+					<h2>Change Email</h2>
+				</ion-item>
+				<ion-item (click)="openprofilePage()">
+					<h2>Profile</h2>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Parveen Kumar</ion-label>
+					<ion-input type="password"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Username</ion-label>
+					<ion-input type="password"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>Location</ion-label>
+					<ion-input type="password"></ion-input>
+				</ion-item>
+			</ion-list>
+			<ion-list radio-group>
+				<ion-list-header>
+					Gender
+				</ion-list-header>
+				<ion-item>
+					<ion-label>Male</ion-label>
+					<ion-radio checked="true" value="male"></ion-radio>
+				</ion-item>
+				<ion-item>
+					<ion-label>Female</ion-label>
+					<ion-radio value="female"></ion-radio>
+				</ion-item>
+			</ion-list>
+			<button type="submit" ion-button round block color="theme">Submit</button>
+		</form>
+	</div>
+</ion-content>
